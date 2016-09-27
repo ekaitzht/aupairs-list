@@ -1,0 +1,97 @@
+.card{
+	background-color:white;
+	margin-top: 1rem;
+
+	.card-head{
+		display: flex;
+	    flex-direction: row;
+	    justify-content: space-between;
+	    background-color: white;
+	    border-bottom: #F8F8F8 1px solid;
+	    height: 60px;
+	    line-height: 60px;
+	    padding-right: 1rem;
+	    padding-left: 1rem;
+
+	    > div{
+	        display: flex;
+	    	flex-direction: row;
+	    	align-items:center;
+	    	
+	    }
+
+
+
+	
+	    .flag{
+	    	padding-left:1rem;
+	    }
+	    .name{
+	        color: #0D6FA1;
+    		font-weight: 500;
+    		padding-right:1rem;
+	    }
+
+	    .video{
+	    	border-left: #F8F8F8 1px solid;
+    		padding-left: 1rem;
+    		padding-right:1rem;
+	    }
+
+	    .nationality{
+	    	width:100px;
+	    }
+
+	    .age{
+	    	border-left: #F8F8F8 1px solid;
+    		padding-left: 1rem;
+    		padding-right:1rem;
+	    }
+
+	    .gender{
+	   		border-left: #F8F8F8 1px solid;
+    		padding-left: 1rem;
+    		padding-right:1rem;
+	    }
+
+	    .country-flag{
+	        		padding-left: 1rem;
+	    }
+
+	    .id{
+	    	font-weight:100;
+	    	color:#79b1ce;
+	    }
+
+	    .video-gender-age-wrapper{
+
+	    }
+	}
+
+	.wrapper-body{
+		display:flex;
+		padding:1rem;
+
+		.info-body{
+
+			.country-english-level-wrapper{
+				display:flex;
+				margin-bottom:2rem;
+
+				.english-level{
+					margin-left: 4rem;
+				}
+			}
+		}
+
+
+		.quote-wrapper{
+			display:flex;
+			.quote-about{
+				padding-left:1.5rem;
+				padding-right:1.5rem;
+			}
+		}
+	}
+}
+

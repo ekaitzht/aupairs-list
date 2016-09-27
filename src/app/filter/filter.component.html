@@ -1,0 +1,25 @@
+
+<select (change)="onChangeCountry($event.target.value)" [(ngModel)]="filter.country">
+   <option selected value="Country">Country</option>
+   <option *ngFor="let country of countries" [value]="country">{{country}}</option>
+</select>
+<select (change)="onChangeAge($event.target.value)" [(ngModel)]="filter.age" >
+   <option selected value="Age">Age</option>
+   <option *ngFor="let age of ages" [value]="age" >{{age}}</option>
+</select>
+<select (change)="onChangeGender($event.target.value)" [(ngModel)]="filter.gender" >
+   <option selected value="Gender">Gender</option>
+   <option *ngFor="let gender of genders" [value]="gender" >{{gender}}</option>
+</select>
+<select (change)="onChangeEnglishLevel($event.target.value)" [(ngModel)]="filter.englishLevel" >
+   <option selected value="English Level">English Level</option>
+   <option *ngFor="let englishLevel of englishLevels" [value]="englishLevel" >{{englishLevel}}</option>
+</select>
+<select (change)="onChangeHasVideo($event.target.value)" [(ngModel)]="filter.hasVideo" >
+   <option selected value="Has Video">Has Video</option>
+   <option *ngFor="let hasVideo of hasVideos" [value]="hasVideo" >{{hasVideo}}</option>
+</select>
+
+
+
+

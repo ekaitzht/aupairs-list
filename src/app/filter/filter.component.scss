@@ -1,0 +1,19 @@
+:host {
+	display: flex;
+    flex-direction: column;
+    margin-top:0.5rem;
+ }
+
+
+ select{
+ 	background-color: #0D6FA1;
+    border: 0 !important;
+    color: white;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0.5rem;
+    margin-bottom: 0.3rem;
+    cursor:pointer;
+ }

@@ -1,0 +1,56 @@
+<div class="card" *ngFor="let auPair of auPairs | formfilter : haha | search : term">
+	<div class="card-head">
+		<div>
+			<div class="name">
+				{{auPair.name}}
+			</div>
+			<div class="id">
+				{{auPair.aupairId}}
+			</div>
+			<img class="flag" src="../../assets/icons/flags/{{auPair.country}}.svg" height="40" width="30">
+		</div>
+		<div class="video-gender-age-wrapper">
+			<div class="video" *ngIf="auPair.hasVideo">VIDEO</div>
+			<div class="gender" *ngIf="auPair.gender === 'M'"><img class="gender-icon" src="../../assets/icons/svgs/male.svg" alt="Male icon"/></div>
+			<div class="gender" *ngIf="auPair.gender === 'F'"><img class="gender-icon" src="../../assets/icons/svgs/female.svg" alt="Female icon"/></div>
+			<div class="age"> 
+				<img class="age-icon" src="../../assets/icons/svgs/age.svg" alt="Female icon"/>
+				{{auPair.dateOfBirth | years}}
+			</div>
+		</div>
+	</div>
+	<div class="wrapper-body">
+		<div class="info-body">
+			<div class="country-english-level-wrapper">
+				<div class="nationality">
+					<div>
+						Country
+					</div>
+					<div>
+						{{auPair.country}}
+					</div>
+				</div>
+				<div class="english-level">
+					<div>
+						English Level
+					</div>
+					<div>
+						<app-rating [rate]='auPair.englishLevel'></app-rating>
+					</div>
+				</div>
+			</div>
+			<div class='quote-wrapper'>
+				<img class="logo-icon" src="../../assets/icons/svgs/quote.svg" alt="Quote logo"/>
+				<div class="quote-about">
+					{{auPair.about}}
+				</div>
+			</div>
+		</div>
+		<div class="image-wrapper">
+			<img [src]="auPair.picture" width="135" heigth="170">
+		</div>
+	</div>
+</div>
+
+
+

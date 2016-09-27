@@ -1,0 +1,61 @@
+@import "../assets/css/variables";
+
+:host {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	color: $blue;
+}
+
+
+body{
+	background-color:$background-color;
+
+}
+
+.sub-header-1{
+	font-size: 12px;
+    font-weight: 500;
+}
+
+
+
+header{
+	background-color:$blue;
+	margin-bottom: 1rem;
+	color:white;
+	> div{
+		max-width:$max-width-page;
+		margin:auto;
+	}
+
+
+	.wrapper-subheader{
+	    max-width: 1024px;
+	    width: 100%;
+	    margin: 0 auto;
+	    display: flex;
+	    justify-content: space-between;
+	    height: 50px;
+    	line-height: 50px;
+
+	    .second-block{
+	    	display:flex;
+
+	    	.logout{
+	    	    margin-left: 0.5rem;
+	    	}
+	    }
+	}
+}
+
+
+#main-wrapper{
+	display: flex;
+    flex-direction: row;
+    max-width: $max-width-page;
+    margin: 0 auto;
+
+    .main-page{
+        margin-left: 2rem;
+        width:100%;
+    }
+}

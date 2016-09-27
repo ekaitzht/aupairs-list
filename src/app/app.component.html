@@ -1,0 +1,33 @@
+<header>
+	<div class="wrapper-subheader">
+		<div class="first-block">
+			Cultural Au Pair
+		</div>
+
+		<div class="second-block">
+			<div>
+				Find an Au Pair
+			</div>
+			<div class="logout">
+				Logout
+			</div>
+		</div>
+	</div>
+</header>
+<div id="main-wrapper">
+	<div class="filter-wrapper">
+		<div class="sub-header-1">
+			FILTERS
+		</div>
+		<app-filter [auPairs]="aupairsDataService.auPairs" (update)="filter = $event"></app-filter>
+	</div>
+	<div class="main-page">
+		<div class="sub-header-1">
+			SEARCH AU PAIRS	
+		</div>
+		<app-search (update)="term = $event" ></app-search>
+		<app-listaupair [auPairs]="aupairsDataService.auPairs" [haha]="filter" [term]="term"></app-listaupair>
+	</div>
+</div>
+
+
